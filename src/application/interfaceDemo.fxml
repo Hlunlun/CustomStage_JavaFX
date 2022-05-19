@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@window.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.WindowController">
+   <children>
+      <Pane id="titleBar" fx:id="titleBar" onMouseDragged="#draged" onMousePressed="#pressed" prefHeight="34.0" prefWidth="600.0">
+         <children>
+            <Button id="closeBtn" fx:id="closeBtn" alignment="TOP_RIGHT" layoutX="559.0" layoutY="3.0" mnemonicParsing="false" onAction="#handleCloseAction" text="✖" textFill="#f80c0c" />
+            <Button id="minBtn" fx:id="minBtn" alignment="TOP_RIGHT" layoutX="487.0" layoutY="2.0" mnemonicParsing="false" onAction="#handledMinAction" text="▂" textFill="#07cfeb" textOverrun="WORD_ELLIPSIS" />
+            <Button id="zoomBtn" fx:id="zoomBtn" alignment="TOP_RIGHT" layoutX="520.0" layoutY="3.0" mnemonicParsing="false" onAction="#handledZoomAction" text="●" textFill="#09e86d" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
